@@ -1,12 +1,10 @@
 # Vesta
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vesta`. To experiment with that code, run `bin/console` for an interactive prompt.
+###Welcome to Vesta Gem! 	
 
-TODO: Delete this and the text above, and describe your gem
-
+ 
 ## Installation
-
-Add this line to your application's Gemfile:
+First you need to install [Vesta Control Panel](https://github.com/serghey-rodin/vesta) . After that add this line to your application's Gemfile:
 
 ```ruby
 gem 'vesta'
@@ -22,7 +20,94 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+#### For example, lets add new web-domain 
+
+```
+require 'vesta'
+
+user = 'demo'
+domain = 'example.com'
+ip = '192.168.0.1'
+
+Vesta.add_web_domain(user, domain, ip)
+
+```
+#### You can have any names for arguments, the main thing that they were in the same order.
+```
+require 'vesta'
+
+a = 'demo'
+b = 'example.com'
+c = '192.168.0.1'
+
+Vesta.add_web_domain(a, b, c)
+
+```
+
+***
+
+## Methods list
+```
+Vesta.add_db(user, database, dbuser, dbpass)
+Vesta.add_dns_domain(user, domain, ip)
+Vesta.add_dns_on_web_alias(user, domain, alia)
+Vesta.add_mail_account(user, domain, account, password)
+Vesta.add_mail_account_alias(user, domain, account, alia)
+Vesta.add_mail_account_reply(user, domain, account, message)
+Vesta.add_mail_account_autoreplay (user, domain, account, message)
+Vesta.add_mail_account_forward (user, domain, account, forward)
+Vesta.add_mail_account_fwd_only (user, domain, account)
+Vesta.add_mail_domain(user, domain)
+Vesta.add_user (user, password, email)
+Vesta.add_web_domain (user, domain, ip)
+Vesta.add_web_domain_ftp (user, domain, ftp_user, ftp_pass)
+Vesta.change_database_owner (detabase, user)
+Vesta.change_database_password (user, database, dbpass)
+Vesta.change_database_user (user, database, dbuser)
+Vesta.change_domain_owner (domain, user)
+Vesta.change_user_contact (user, email)
+Vesta.change_user_name (user, first_name, last_name)
+Vesta.change_user_password (user, password)
+Vesta.change_web_domain_ip (user, domain, ip)****
+Vesta.delete_database (user, database)
+Vesta.delete_databases (user)
+Vesta.delete_dns_domain (user, domain)
+Vesta.delete_dns_domains (user)
+Vesta.delete_domain (user, domain)
+Vesta.delete_mail_account (user, domain, account)
+Vesta.delete_mail_domain (user, domain)
+Vesta.delete_mail_domains (user)
+Vesta.delete_user (user)
+Vesta.delete_web_domain (user, domain)
+Vesta.delete_web_domains (user)
+Vesta.list_cron_jobs (user)
+Vesta.list_databases (user)
+Vesta.list_dns_domains (user)
+Vesta.list_mail_accounts (user, domain)
+Vesta.list_user_domains (user)
+Vesta.list_user_ips (user)
+Vesta.list_users
+Vesta.list_web_domains (user)
+Vesta.search_domain_owner (domain)
+Vesta.suspend_cron_jobs (user)
+Vesta.suspend_mail_account (user, domain, account)
+Vesta.suspend_mail_accounts (user, domain)
+Vesta.suspend_mail_domain (user, domain)
+Vesta.suspend_mail_domains (user)
+Vesta.suspend_user (user)
+Vesta.suspend_web_domain (user, domain)
+Vesta.unsuspend_cron_jobs (user)
+Vesta.unsuspend_mail_account (user, domain, account)
+Vesta.unsuspend_mail_accounts (user, domain)
+Vesta.unsuspend_mail_domain (user, domain)
+Vesta.unsuspend_mail_domains (user)
+Vesta.unsuspend_user (user)
+Vesta.unsuspend_web_domain (user, domain)
+
+
+
+
+```
 
 ## Development
 
