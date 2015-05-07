@@ -30,6 +30,7 @@ domain = 'example.com'
 ip = '192.168.0.1'
 
 Vesta.add_web_domain(user, domain, ip)
+# => add web domain example.com for demo user with ip 192.168.0
 
 ```
 #### You can have any names for arguments, the main thing that they were in the same order.
@@ -68,7 +69,7 @@ Vesta.change_domain_owner (domain, user)
 Vesta.change_user_contact (user, email)
 Vesta.change_user_name (user, first_name, last_name)
 Vesta.change_user_password (user, password)
-Vesta.change_web_domain_ip (user, domain, ip)****
+Vesta.change_web_domain_ip (user, domain, ip)
 Vesta.delete_database (user, database)
 Vesta.delete_databases (user)
 Vesta.delete_dns_domain (user, domain)
