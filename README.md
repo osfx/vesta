@@ -30,7 +30,7 @@ domain = 'example.com'
 ip = '192.168.0.1'
 
 Vesta.add_web_domain(user, domain, ip)
-# => add web domain example.com for demo user with ip 192.168.0
+# => add web domain example.com for demo user with ip 192.168.0.1
 
 ```
 #### You can have any names for arguments, the main thing that they were in the same order.
