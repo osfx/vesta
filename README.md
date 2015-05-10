@@ -1,8 +1,6 @@
 # Vesta
+[![Gem Version](https://badge.fury.io/rb/vesta.svg)](http://badge.fury.io/rb/vesta)
 
-###Welcome to Vesta Gem! 	
-
- 
 ## Installation
 First you need to install [Vesta Control Panel](https://github.com/serghey-rodin/vesta) . After that add this line to your application's Gemfile:
 
