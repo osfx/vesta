@@ -20,7 +20,7 @@ Or install it yourself as:
 
 #### For example, lets add new web-domain 
 
-```
+```ruby
 require 'vesta'
 
 user = 'demo'
@@ -32,7 +32,7 @@ Vesta.add_web_domain(user, domain, ip)
 
 ```
 #### You can have any names for arguments, the main thing that they were in the same order.
-```
+```ruby
 require 'vesta'
 
 a = 'demo'
@@ -46,7 +46,7 @@ Vesta.add_web_domain(a, b, c)
 ***
 
 ## Methods list
-```
+```ruby
 Vesta.add_database(user, database, dbuser, dbpass)
 Vesta.add_dns_domain(user, domain, ip)
 Vesta.add_dns_on_web_alias(user, domain, alia)
