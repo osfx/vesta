@@ -1,4 +1,5 @@
 require "vesta/version"
+require "vesta/api"
 
 module Vesta
 
@@ -9,7 +10,7 @@ module Vesta
   def self.add_dns_domain(user, domain, ip)
    exec("v-add-dns-domain #{user} #{domain} #{ip}")
   end
-  
+
   def self.add_mail_account(user, domain, account, password)
    exec("v-add-mail-account #{user} #{domain} #{account} #{password}")
   end
