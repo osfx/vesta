@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
 
 require "vesta"
-puts 42
+
+v = Vesta::API.new('user-name')
+puts v.add_database('asd', 'aa')
+puts v.methods
+puts v.normalize
+puts v.add_task ["nn", "ddf"]
