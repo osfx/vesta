@@ -1,4 +1,5 @@
 require "vesta/version"
+require "vesta/base"
 require "vesta/api"
 
 module Vesta
