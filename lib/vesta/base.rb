@@ -238,7 +238,7 @@ class Base
     v-unsuspend-mail-accounts
     v-unsuspend-mail-domain
     v-unsuspend-mail-domains
-    v-unsuspend-remote-dns-host±§
+    v-unsuspend-remote-dns-host
     v-unsuspend-user
     v-unsuspend-web-domain
     v-unsuspend-web-domains
