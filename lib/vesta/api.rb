@@ -10,11 +10,11 @@ module Vesta
       @all_methods.each do |m|
         self.class.send(:define_method, "#{m.to_s.gsub("-","_")}") do |arg|
           if arg.class == Array
-            "#{m} " + arg.join(" ")
+            exec("#{m} " + arg.join(" "))
           elsif arg.class == String
-           "#{m} " + arg
+            exec("#{m} " + arg)
           else
-            "#{m} "
+            exec("#{m} ")
           end
         end
       end
