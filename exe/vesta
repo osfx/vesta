@@ -7,10 +7,12 @@ require "vesta"
 # puts v.methods
 # puts v.normalize
 # puts v.add_task ["nn", "ddf"]
+first_arg, *the_rest = ARGV
 v = Vesta::API.new
 # d = v.dasherize.to_s
 # vesta =  Vesta::API.start(d)
 v.start
 # v.v_add_backup_ftp_host
-puts v.v_delete_cron_vesta_autoupdate(["asd", "uj"])
-puts v.v_delete_cron_vesta_autoupdate("s")
+puts v.v_list_users(first_arg)
+# puts "v.#{first_arg} #{the_rest}"
+# puts v.("s")
